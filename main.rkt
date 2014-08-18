@@ -6,4 +6,5 @@
 (define-syntax-rule (ygor-module-begin body ...)
   (#%plain-module-begin body ...))
 
-(define hello? (print "hello to you too!"))
+(define-syntax-rule (hello?)
+  (print "hello to you too!"))
